@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragmemt与activity相比，它是更轻量级，在同一个程序内切换更快" />
+
+    <Button
+        android:id="@+id/btnShowAnotherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开另一个Fragmemt" />
+</LinearLayout>
