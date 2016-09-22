@@ -1,5 +1,6 @@
 package com.bianfeng.learnfragment;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +9,12 @@ import android.view.ViewGroup;
 
 public class PlaceholderFragment extends Fragment {
     public PlaceholderFragment() {
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        System.out.println("P onCreate");
+        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -30,5 +37,19 @@ public class PlaceholderFragment extends Fragment {
             }
         });
         return rootView ;
+    }
+
+    @Override
+    public void onDestroy() {
+        //始终不执行
+        System.out.println("P onDestroy");
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView() {
+        //当第二个fragment覆盖此fragment时，会执行此方法
+        System.out.println("P onDestroyView");
+        super.onDestroyView();
     }
 }
