@@ -13,4 +13,16 @@
     tools:context="com.bianfeng.learnfragment.SliderActivity"
     tools:showIn="@layout/app_bar_slider">
 
+    <TimePicker
+        android:id="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"></TimePicker>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar"
+        android:src="@drawable/img1" />
 </RelativeLayout>
