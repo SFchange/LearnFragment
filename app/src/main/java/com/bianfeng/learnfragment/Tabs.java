@@ -159,11 +159,11 @@ public class Tabs extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "陶瓷 1";
                 case 1:
-                    return "SECTION 2";
+                    return "纸杯 2";
                 case 2:
-                    return "SECTION 3";
+                    return "套装 3";
             }
             return null;
         }
