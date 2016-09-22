@@ -1,5 +1,6 @@
 package com.bianfeng.learnfragment;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -34,6 +35,19 @@ public class PlaceholderFragment extends Fragment {
                         .beginTransaction()
                         .addToBackStack(null)
                         .replace(R.id.container,new AnotherFragment()).commit();
+            }
+        });
+
+        rootView.findViewById(R.id.btnStartSliderActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),SliderActivity.class));
+            }
+        });
+        rootView.findViewById(R.id.btnStartTabs).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),Tabs.class));
             }
         });
         return rootView ;
